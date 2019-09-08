@@ -8,7 +8,7 @@
 #ifndef DoubleResetDetector_H__
 #define DoubleResetDetector_H__
 
-#include <FS.h>
+#include <SPIFFS.h>
 
 #if defined(ARDUINO) && (ARDUINO >= 100)
 #include <Arduino.h>

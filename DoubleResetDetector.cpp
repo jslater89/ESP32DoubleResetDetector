@@ -16,7 +16,7 @@ DoubleResetDetector::DoubleResetDetector(int timeout) {
 }
 
 void DoubleResetDetector::detectDoubleReset() {
-  fsMounted = SPIFFS.begin();
+  fsMounted = SPIFFS.begin(true);
   detectDoubleReset(fsMounted);
 }
 
